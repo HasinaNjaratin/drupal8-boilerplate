@@ -26,6 +26,8 @@ cd some-dir
 composer require drupal/devel:~1.0
 ```
 
+Use `settings.local.php` to config local settings.
+
 ### How can I apply patches to downloaded modules?
 
 If you need to apply patches (depending on the project being modified, a pull 
