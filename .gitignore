@@ -15,9 +15,12 @@
 /web/.htaccess
 /web/autoload.php
 /.editorconfig
+/web/modules/contrib
+/web/themes/contrib
 /web/sites/example.settings.local.php
 /web/sites/example.sites.php
 /web/sites/default/files
+/web/sites/default/private
 /web/sites/default/default.services.yml
 /web/sites/default/default.settings.php
 /web/sites/default/settings.local.php
