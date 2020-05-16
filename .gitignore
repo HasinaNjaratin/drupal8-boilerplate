@@ -12,3 +12,6 @@
 /web/sites/default/default.services.yml
 /web/sites/default/default.settings.php
 /web/sites/default/settings.local.php
+/.buildpath
+/.settings/
+/.project
