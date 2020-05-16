@@ -1,83 +1,81 @@
 {
-	"name": "your-project-name",
-	"description": "Drupal setup with composer and eclipse",
-	"type": "project",
-	"license": "GPL-2.0-or-later",
-	"authors": [
-		{
-			"name": "HasinaNjaratin <hasina.mailto@gmail.com>",
-			"role": "Maintener"
+	"name" : "your-project-name",
+	"description" : "Drupal setup with composer and eclipse",
+	"type" : "project",
+	"license" : "GPL-2.0-or-later",
+	"authors" : [{
+			"name" : "HasinaNjaratin <hasina.mailto@gmail.com>",
+			"role" : "Maintener"
 		}
 	],
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://packages.drupal.org/8"
+	"repositories" : [{
+			"type" : "composer",
+			"url" : "https://packages.drupal.org/8"
 		}
 	],
-	"require": {
-		"php": ">=7.3",
-		"composer/composer": "^1.9",
-		"composer/installers": "^1.2",
-		"cweagans/composer-patches": "^1.6.5",
-		"drupal-composer/drupal-scaffold": "^2.5",
-		"drupal/core": "^8.8",
-		"zaporylie/composer-drupal-optimizations": "^1.0"
+	"require" : {
+		"php" : ">=7.3",
+		"composer/composer" : "^1.9",
+		"composer/installers" : "^1.2",
+		"cweagans/composer-patches" : "^1.6.5",
+		"drupal/core-composer-scaffold" : "^8.8",
+		"drupal/core" : "^8.8",
+		"zaporylie/composer-drupal-optimizations" : "^1.0"
 	},
-	"require-dev": {
-		"drush/drush": "^9.0.0",
-		"drupal/console": "^1.0.2"
+	"require-dev" : {
+		"drush/drush" : "^9.0.0",
+		"drupal/console" : "^1.0.2"
 	},
-	"conflict": {
-		"drupal/drupal": "*"
+	"conflict" : {
+		"drupal/drupal" : "*"
 	},
-	"minimum-stability": "dev",
-	"prefer-stable": true,
-	"config": {
-		"autoloader-suffix": "Drupal8",
-		"discard-changes": true,
-		"optimize-autoloader": true,
-		"sort-packages": true
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"config" : {
+		"autoloader-suffix" : "Drupal8",
+		"discard-changes" : true,
+		"optimize-autoloader" : true,
+		"sort-packages" : true
 	},
-	"autoload": {
-		"classmap": [
+	"autoload" : {
+		"classmap" : [
 			"scripts/composer/ScriptHandler.php"
 		]
 	},
-	"scripts": {
-		"pre-install-cmd": "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
-		"pre-update-cmd": "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
-		"post-install-cmd": "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-		"post-update-cmd": "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+	"scripts" : {
+		"pre-install-cmd" : "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
+		"pre-update-cmd" : "DrupalProject\\composer\\ScriptHandler::checkComposerVersion",
+		"post-install-cmd" : "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+		"post-update-cmd" : "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
 	},
-	"extra": {
-		"composer-exit-on-patch-failure": true,
-		"patchLevel": {
-			"drupal/core": "-p2"
+	"extra" : {
+		"composer-exit-on-patch-failure" : true,
+		"patchLevel" : {
+			"drupal/core" : "-p2"
 		},
-		"installer-paths": {
-			"web/core": [
+		"installer-paths" : {
+			"www/core" : [
 				"type:drupal-core"
 			],
-			"web/libraries/{$name}": [
+			"www/libraries/{$name}" : [
 				"type:drupal-library"
 			],
-			"web/modules/contrib/{$name}": [
+			"www/modules/contrib/{$name}" : [
 				"type:drupal-module"
 			],
-			"web/profiles/contrib/{$name}": [
+			"www/profiles/contrib/{$name}" : [
 				"type:drupal-profile"
 			],
-			"web/themes/contrib/{$name}": [
+			"www/themes/contrib/{$name}" : [
 				"type:drupal-theme"
 			],
-			"drush/Commands/{$name}": [
+			"drush/Commands/{$name}" : [
 				"type:drupal-drush"
 			]
 		},
-		"drupal-scaffold": {
-			"locations": {
-				"web-root": "www/"
+		"drupal-scaffold" : {
+			"locations" : {
+				"web-root" : "www/"
 			}
 		}
 	}
