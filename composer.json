@@ -1,40 +1,42 @@
 {
-	"name" : "your-project-name",
-	"description" : "Drupal setup with composer and eclipse",
-	"type" : "project",
-	"license" : "GPL-2.0-or-later",
-	"authors" : [{
-			"name" : "HasinaNjaratin <hasina.mailto@gmail.com>",
-			"role" : "Maintener"
-		}
-	],
+    "name" : "hasinanjaratin/drupal-boilerplate",
+    "description" : "Drupal setup with composer and grumphp.",
+    "type" : "project",
+    "license" : "GPL-2.0-or-later",
+    "authors" : [{
+        "name" : "HasinaNjaratin <hasina.mailto@gmail.com>",
+        "role" : "Maintener"
+    }
+    ],
 	"repositories" : [{
 			"type" : "composer",
 			"url" : "https://packages.drupal.org/8"
 		}
 	],
 	"require" : {
-		"php": ">=7.3",
-		"composer/composer": "^1.9",
-		"composer/installers": "^1.2",
-		"cweagans/composer-patches": "^1.6.5",
-		"drupal/admin_toolbar": "^2.2",
-		"drupal/config_ignore": "^2.2",
-		"drupal/config_split": "^1.4",
-		"drupal/core": "^8.8",
-		"drupal/core-composer-scaffold": "^8.8",
-		"drupal/ctools": "^3.4",
-		"drupal/paragraphs": "^1.11",
-		"drupal/ultimate_cron": "^2.0@alpha",
-		"zaporylie/composer-drupal-optimizations": "^1.0"
-	},
-	"require-dev" : {
-		"drupal/coder": "^8.3",
-		"drupal/console": "^1.0.2",
-		"drupal/devel": "^2.1",
-		"drush/drush": "^9.0.0",
-		"phpunit/phpunit": "^9.1"
-	},
+        "php": ">=7.3",
+        "composer/composer": "^1.9",
+        "composer/installers": "^1.2",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/admin_toolbar": "^2.2",
+        "drupal/config_ignore": "^2.2",
+        "drupal/config_split": "^1.4",
+        "drupal/core": "^8.8",
+        "drupal/core-composer-scaffold": "^8.8",
+        "drupal/ctools": "^3.4",
+        "drupal/paragraphs": "^1.11",
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
+    },
+    "require-dev" : {
+        "drupal/coder": "^8.3",
+        "drupal/console": "^1.0.2",
+        "drupal/devel": "^2.1",
+        "drush/drush": "^9.0.0",
+        "php-parallel-lint/php-parallel-lint": "^1.2",
+        "phpro/grumphp": "0.18.1",
+        "phpunit/phpunit": "^9.1"
+    },
 	"conflict" : {
 		"drupal/drupal" : "*"
 	},
