@@ -98,8 +98,6 @@ drush csex -y
 
 You need to manage po files to configure multilanguage site case.
 
-Translations directory is stored (configured) _/config/translations_
-
 To check for updates
 
 ```
